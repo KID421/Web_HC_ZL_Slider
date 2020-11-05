@@ -6,4 +6,31 @@
           box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+
+#kid-slider {
+  height: 100vh;
+}
+
+#kid-slider .kid-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#kid-slider .kid-item img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#kid-slider .kid-item h1 {
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 150px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */
