@@ -9,12 +9,14 @@
 
 #kid-slider {
   height: 100vh;
+  overflow: hidden;
 }
 
 #kid-slider .kid-item {
   position: relative;
   height: 100%;
   width: 100%;
+  display: none;
 }
 
 #kid-slider .kid-item img {
@@ -44,6 +46,10 @@
           animation-delay: 0.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+#kid-slider .kid-active {
+  display: block;
 }
 
 @-webkit-keyframes kidImage {

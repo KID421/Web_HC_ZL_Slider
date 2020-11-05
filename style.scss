@@ -8,12 +8,14 @@
 // 大盒子
 #kid-slider {
     height: 100vh;
+    overflow: hidden;   // 溢出 隱藏
 
     // 輪播項目
     .kid-item {
         position: relative;
         height: 100%;
         width: 100%;
+        display: none;
 
         // 圖片
         img {
@@ -35,9 +37,14 @@
             z-index: 2;
             animation-name: kidTitle;
             animation-duration: 0.8s;
-            animation-delay: 0.5s;          // 動畫延遲
-            animation-fill-mode: backwards;
+            animation-delay: 0.5s;              // 動畫延遲
+            animation-fill-mode: backwards;     // 停留在動畫開始的畫面 (forwards 相反)
         }
+    }
+
+    // 要顯示的項目
+    .kid-active {
+        display: block;
     }
 }
 
