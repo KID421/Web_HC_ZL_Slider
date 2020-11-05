@@ -46,6 +46,24 @@
     .kid-active {
         display: block;
     }
+
+    // 大顆按鈕樣式
+    #kid-prev, #kid-next {
+        width: 80px;
+        height: 150px;
+        background: #ffffff66;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #kid-prev {
+        left: 0;
+    }
+    #kid-next {
+        right: 0;
+    }
 }
 
 // 動畫 animation 必須先額外設定動畫的效果

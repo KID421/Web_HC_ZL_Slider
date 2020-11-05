@@ -52,6 +52,25 @@
   display: block;
 }
 
+#kid-slider #kid-prev, #kid-slider #kid-next {
+  width: 80px;
+  height: 150px;
+  background: #ffffff66;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#kid-slider #kid-prev {
+  left: 0;
+}
+
+#kid-slider #kid-next {
+  right: 0;
+}
+
 @-webkit-keyframes kidImage {
   0% {
     -webkit-transform: scale(1.5);
