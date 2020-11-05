@@ -23,6 +23,10 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-animation-name: kidImage;
+          animation-name: kidImage;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #kid-slider .kid-item h1 {
@@ -32,5 +36,57 @@
   left: 150px;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   z-index: 2;
+  -webkit-animation-name: kidTitle;
+          animation-name: kidTitle;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes kidImage {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes kidImage {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes kidTitle {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes kidTitle {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
