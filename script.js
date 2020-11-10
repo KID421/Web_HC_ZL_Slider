@@ -35,3 +35,7 @@ function showItem() {
     // 將目前要顯示的橡木添加 kid-active 類別
     items[index].classList.add("kid-active");
 }
+
+// 取得屬性("屬性名稱")
+var duration = document.getElementById("kid-slider").getAttribute("data-slider-duration");
+console.log(duration);
