@@ -74,13 +74,28 @@
 
         .kid-button {
             display: inline-block;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             background: #ffffff77;
             border-radius: 50%;
             margin: 0 10px;
             cursor: pointer;
         }
+
+        .kid-button-active {
+            animation-name: kidButton;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;     // 停留在動畫結束的畫面 (backwords 相反)
+        }
+    }
+}
+
+@keyframes kidButton {
+    0% {
+        background: #ffffff77;
+    }
+    100% {
+        background: #00000077;
     }
 }
 

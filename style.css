@@ -82,12 +82,39 @@
 
 #kid-slider #kid-buttons .kid-button {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   background: #ffffff77;
   border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
+}
+
+#kid-slider #kid-buttons .kid-button-active {
+  -webkit-animation-name: kidButton;
+          animation-name: kidButton;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes kidButton {
+  0% {
+    background: #ffffff77;
+  }
+  100% {
+    background: #00000077;
+  }
+}
+
+@keyframes kidButton {
+  0% {
+    background: #ffffff77;
+  }
+  100% {
+    background: #00000077;
+  }
 }
 
 @-webkit-keyframes kidImage {
