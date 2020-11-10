@@ -49,3 +49,17 @@ function reset() {
     clearInterval(auto);                    // 清除時間
     auto = setInterval(btnNext, duration);  // 重新自動播放
 }
+
+// 取得所有小按鈕
+var btns = document.getElementsByClassName("kid-button");
+
+// 迴圈執行每顆按鈕點擊事情
+for (var i = 0; i < btns.length; i++) {
+    // 匿名函式 function() {}
+    btns[i].onclick = function() {
+        index = this.getAttribute("data-slider-item") - 1;      // 編號 = 點擊按鈕的屬性 - 1
+
+        showItem();
+        reset();
+    }
+}
