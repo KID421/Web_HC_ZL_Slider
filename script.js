@@ -38,4 +38,6 @@ function showItem() {
 
 // 取得屬性("屬性名稱")
 var duration = document.getElementById("kid-slider").getAttribute("data-slider-duration");
-console.log(duration);
+
+// 設定間隔呼叫函式 (函式名稱，時間)
+setInterval(btnNext, duration);
