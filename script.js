@@ -12,6 +12,7 @@ function btnNext() {
     if (index == items.length) index = 0;       // 如果編號超出範圍 編號歸零
 
     showItem();
+    reset();
 }
 // 按鈕函式：上一張
 function btnPrev() {
@@ -20,6 +21,7 @@ function btnPrev() {
     if (index == -1) index = items.length - 1;  // 如果編號超出範圍 編號等於 長度-1
 
     showItem();
+    reset();
 }
 
 next.onclick = btnNext;                         // 點擊函式
@@ -40,4 +42,10 @@ function showItem() {
 var duration = document.getElementById("kid-slider").getAttribute("data-slider-duration");
 
 // 設定間隔呼叫函式 (函式名稱，時間)
-setInterval(btnNext, duration);
+var auto = setInterval(btnNext, duration);
+
+// 重新設定自動播放時間
+function reset() {
+    clearInterval(auto);                    // 清除時間
+    auto = setInterval(btnNext, duration);  // 重新自動播放
+}
