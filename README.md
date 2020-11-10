@@ -8,6 +8,10 @@ https://kid421.github.io/Web_HC_ZL_Slider/
 
 ## CDN
 
+```
+    <script src="https://kid421.github.io/Web_HC_ZL_Slider/script.js"></script>
+```
+
 ## 架構
 
 ```
@@ -35,6 +39,7 @@ https://kid421.github.io/Web_HC_ZL_Slider/
         <div id="kid-next"></div>
 
         <!-- 小顆按扭區塊：根據需求複製貼上 active 只有一組 -->
+        <!-- data-slider-item 隨數量增加 -->
         <div id="kid-buttons">
             <div class="kid-button kid-button-active" data-slider-item="1"></div>
             <div class="kid-button" data-slider-item="2"></div>
